@@ -8,6 +8,10 @@
     <title>OriginSix</title>
 
     <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./assets/fonts/style.css" />
 
@@ -144,63 +148,70 @@
 
       <!-- Testimonials -->
       <section class="section" id="testimonials">
-        <div class="container grid">
+        <div class="container">
           <header>
             <h2 class="title">Depoimentos de quem já passou por aqui</h2>
           </header>
         </div>
-        <div class="testimonials">
-          <div class="testimonial">
-            <blockquote>
-              <p>
-                <span>&ldquo;</span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                obcaecati sit placeat minima dolorem, voluptatum dolores,
-                commodi libero, nesciunt molestiae sint! Tenetur, maiores
-                molestias. Nisi, vitae! Nisi magnam pariatur ex!
-              </p>
-              <cite>
-                <img src="./assets/photos/woman-1.jpg" alt="Wanessa photo" />
-                Wanessa Souza
-              </cite>
-            </blockquote>
+        <div class="testimonials swiper-container">
+          <div class="swiper-wrapper">
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat obcaecati sit placeat minima dolorem, voluptatum
+                  dolores, commodi libero, nesciunt molestiae sint! Tenetur,
+                  maiores molestias. Nisi, vitae! Nisi magnam pariatur ex!
+                </p>
+                <cite>
+                  <img src="./assets/photos/woman-1.jpg" alt="Wanessa photo" />
+                  Wanessa Souza
+                </cite>
+              </blockquote>
+            </div>
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat obcaecati sit placeat minima dolorem, voluptatum
+                  dolores, commodi libero, nesciunt molestiae sint! Tenetur,
+                  maiores molestias. Nisi, vitae! Nisi magnam pariatur ex!
+                </p>
+                <cite>
+                  <img
+                    src="./assets/photos/woman-2.jpg"
+                    alt="Franciele photo"
+                  />
+                  Franciele Venega
+                </cite>
+              </blockquote>
+            </div>
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat obcaecati sit placeat minima dolorem, voluptatum
+                  dolores, commodi libero, nesciunt molestiae sint! Tenetur,
+                  maiores molestias. Nisi, vitae! Nisi magnam pariatur ex!
+                </p>
+                <cite>
+                  <img src="./assets/photos/woman-3.jpg" alt="Valeska photo" />
+                  Valeska Fabris
+                </cite>
+              </blockquote>
+            </div>
           </div>
-          <div class="testimonial">
-            <blockquote>
-              <p>
-                <span>&ldquo;</span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                obcaecati sit placeat minima dolorem, voluptatum dolores,
-                commodi libero, nesciunt molestiae sint! Tenetur, maiores
-                molestias. Nisi, vitae! Nisi magnam pariatur ex!
-              </p>
-              <cite>
-                <img src="./assets/photos/woman-2.jpg" alt="Franciele photo" />
-                Franciele Venega
-              </cite>
-            </blockquote>
-          </div>
-          <div class="testimonial">
-            <blockquote>
-              <p>
-                <span>&ldquo;</span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                obcaecati sit placeat minima dolorem, voluptatum dolores,
-                commodi libero, nesciunt molestiae sint! Tenetur, maiores
-                molestias. Nisi, vitae! Nisi magnam pariatur ex!
-              </p>
-              <cite>
-                <img src="./assets/photos/woman-3.jpg" alt="Valeska photo" />
-                Valeska Fabris
-              </cite>
-            </blockquote>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 
       <!-- Contact -->
     </main>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
