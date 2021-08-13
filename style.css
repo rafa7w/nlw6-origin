@@ -139,7 +139,7 @@ nav ul li a::after {
   position: absolute;
   left: 0;
   bottom: -1.5rem;
-  transition: width .2s;
+  transition: width 0.2s;
 }
 
 nav ul li a:hover::after {
@@ -170,6 +170,25 @@ nav.show .menu {
 
 nav.show ul.grid {
   gap: 4rem;
+}
+
+/* Toogle menu */
+.toogle {
+  color: var(--base-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+nav .icon-clear {
+  visibility: hidden;
+  opacity: 0;
+}
+
+nav.show div.icon-clear {
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+  right: 1.5rem;
 }
 
 /*==== Home ========================== */
