@@ -19,16 +19,16 @@ for (const link of links) {
 }
 
 /* incluir um efeito de sombra no header quando der scroll */
-const header = document.querySelector('#header')
-const navHeight = header.offsetHeight
+function changeHeaderWhenScroll() {
+  const header = document.querySelector('#header')
+  const navHeight = header.offsetHeight
 
-window.addEventListener('scroll', () => {
   if (window.scrollY >= navHeight) {
     header.classList.add('scroll')
   } else {
     header.classList.remove('scroll')
   }
-})
+}
 
 /* carousel da seção de depoimentos */
 const swiper = new Swiper('.swiper-container', {
@@ -54,11 +54,17 @@ scrollReveal.reveal(
 )
 
 /* back to top */
-const backToTopButton = document.querySelector('.back-to-top')
-window.addEventListener('scroll', () => {
+function backToTop() {
+  const backToTopButton = document.querySelector('.back-to-top')
+
   if (window.scrollY >= 560) {
     backToTopButton.classList.add('show')
   } else {
     backToTopButton.classList.remove('show')
   }
+}
+
+window.addEventListener('scroll', () => {
+  changeHeaderWhenScroll()
+  backToTop()
 })
