@@ -90,7 +90,8 @@ body {
 
 /*==== Layout ========================== */
 .container {
-  margin: 0 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .grid {
@@ -99,7 +100,7 @@ body {
 }
 
 .section {
-  padding: calc(5rem + var(--header-height));
+  padding: calc(5rem + var(--header-height)) 0;
 }
 
 .section .title {
@@ -202,7 +203,7 @@ nav .menu ul {
 nav.show .menu {
   opacity: 1;
   visibility: visible;
-  background-color: var(--body-color);
+  background: var(--body-color);
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -288,7 +289,6 @@ nav.show div.icon-clear {
 
 #home .text p {
   margin-bottom: 2rem;
-  max-width: 100%;
 }
 
 /*==== About ========================== */
@@ -515,7 +515,7 @@ footer .social a:hover {
 /* large devices: 992 > */
 /* medium devices: 767 > */
 
-/* extra large devices > */
+/* extra large devices: 1200 > */
 @media (min-width: 1200px) {
   /* Reusable classes */
   .container {
