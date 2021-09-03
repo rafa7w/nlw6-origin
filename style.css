@@ -364,6 +364,11 @@ nav.show div.icon-clear {
   margin-right: 0;
 }
 
+#testimonials .horizontal {
+  display: block;
+  overflow: hidden;
+}
+
 #testimonials header {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -592,6 +597,12 @@ footer .social a:hover {
   #about .container {
     margin: 0 auto;
     grid-auto-flow: column;
+  }
+
+  #about img {
+    position: relative;
+    left: -3.5rem;
+    top: 2rem
   }
 
   /* Services */
